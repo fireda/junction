@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<style>
+    
+    .navbar {
+        background-color: #007BFF;
+        
+        opacity: 0.9;
+        
+        border-bottom: 3px solid #0056b3;
+        
+    }
+
+    
+    .navbar-brand {
+        color: #fff;
+       
+        font-size: 24px;
+        
+        font-weight: bold;
+        
+    }
+
+  
+    .navbar-nav .nav-link {
+        color: #fff;
+       
+        font-weight: bold;
+       
+        font-size: 16px;
+        
+        margin-right: 20px;
+        
+        transition: color 0.3s ease;
+        
+    }
+
+    
+    .navbar-nav .nav-link:hover {
+        color: #0056b3;
+        
+    }
+
+    
+    .navbar-nav .nav-link::after {
+        content: "";
+        
+        display: block;
+        
+        width: 0;
+        
+        height: 2px;
+       
+        background-color: #fff;
+       
+        transition: width 0.3s ease;
+       
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+        
+    }
+
+    
+    .navbar-nav .nav-link:not(:last-child) {
+        margin-right: 20px;
+    }
+
+   
+    .navbar-nav .nav-link .fa {
+        margin-right: 5px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .media-heading {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+    .media-object {
+        border-radius: 50%;
+
+        margin-right: 20px;
+
+    }
+
+
+    .media {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+
+        padding: 15px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    .media:hover {
+        background-color: #f8f8f8;
+
+    }
+
+
+    .container {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">管理页面</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">设置</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">注销</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid ">
+
+        <div class="col-md-1">
+            <nav id="sidebar" class="bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-camera mr-2"></i> 图片传感器
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-lightbulb mr-2"></i> 光感传感器
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-flask mr-2"></i> 无机盐传感器
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-flask mr-2"></i> 营养液检测传感器
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-flask mr-2"></i> 尿素传感器
+                            </a>
+                        </li>
+                        
+           
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="col-sm-10">
+            <div class="bs-example" data-example-id="media-alignment">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                                src="img/微信图片_20230916205649.png" data-holder-rendered="true"
+                                style="width: 64px; height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">气体传感器</h4>
+                        <p>数据检查正常，一切运行顺利。系统已成功验证并处理了输入数据，未发现任何异常或错误。数据的完整性和准确性得到维护，没有触发任何警报或异常通知。</p>
+                        <p>CO2浓度：<i class="fas fa-thermometer-half"></i> >=0.03%</p>
+                        <p>O2的浓度：<i class="fas fa-tint"></i> 21%</p>
+                        <p>N2的浓度：<i class="fas fa-sun"></i> 78%</p>
+                        <p>安全状态：<i class="fas fa-check-circle"></i> 安全</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#">
+                            <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                                src="img/微信图片_20230916205658.png" data-holder-rendered="true"
+                                style="width: 64px; height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">光感传感器</h4>
+                        <p>数据检查正常，一切运行顺利。系统已成功验证并处理了输入数据，未发现任何异常或错误。数据的完整性和准确性得到维护，没有触发任何警报或异常通知。</p>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>辐射测温：<i class="fas fa-thermometer-half"></i> 25°C</p>
+                        <p>关照度：<i class="fas fa-tint"></i> 60%</p>
+                        <p>光强：<i class="fas fa-sun"></i> 25%-50%</p>
+                        <p>气体成分：<i class="fas fa-sun"></i> 氧气，氮气等</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-bottom">
+                        <a href="#">
+                            <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                                src="img/微信图片_20230916205702.png" data-holder-rendered="true"
+                                style="width: 64px; height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">无机盐传感器</h4>
+                        <p>数据检查正常，一切运行顺利。系统已成功验证并处理了输入数据，未发现任何异常或错误。数据的完整性和准确性得到维护，没有触发任何警报或异常通知。</p>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>无机盐浓度：<i class="fas fa-thermometer-half"></i> 0.7</p>
+                        <p>磷:<i class="fas fa-tint"></i> 57-100ms/1L</p>
+                        <p>氮：<i class="fas fa-sun"></i> 140-225ms/1L</p>
+                        <p>钾:<i class="fas fa-sun"></i>106-150ms/1L</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-bottom">
+                        <a href="#">
+                            <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                                src="img/微信图片_20230916214036.png" data-holder-rendered="true"
+                                style="width: 64px; height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">营养液检测传感器</h4>
+                        <p>数据检查正常，一切运行顺利。系统已成功验证并处理了输入数据，未发现任何异常或错误。数据的完整性和准确性得到维护，没有触发任何警报或异常通知。</p>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>营养液浓度：<i class="fas fa-thermometer-half"></i> 0.2%-0.4%</p>
+                        <p>磷成分:<i class="fas fa-tint"></i> 57-100ms/1L</p>
+                        <p>氮成分：<i class="fas fa-sun"></i> 140-225ms/1L</p>
+                        <p>钾成分:<i class="fas fa-sun"></i>106-150ms/1L</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left media-bottom">
+                        <a href="#">
+                            <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                                src="img/微信图片_20230916213952.png" data-holder-rendered="true"
+                                style="width: 64px; height: 64px;">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">尿素传感器</h4>
+                        <p>数据检查正常，一切运行顺利。系统已成功验证并处理了输入数据，未发现任何异常或错误。数据的完整性和准确性得到维护，没有触发任何警报或异常通知。</p>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>氨：<i class="fas fa-thermometer-half"></i> 5%-10%</p>
+                        <p>纳米颗粒:<i class="fas fa-tint"></i> 0.5%-1%</p>
+                        <p>二氧化钛：<i class="fas fa-sun"></i> 0.05%-0.1%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="plugins/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
